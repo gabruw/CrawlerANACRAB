@@ -33,18 +33,11 @@ namespace CrawlerANACRAAB
                 var texto = string.Empty;
                 if (indice.Contains("Motivo(s)"))
                 {
-                    var motivos = nodeHtmlDoc.DocumentNode.SelectNodes("td");
+                    var motivos = nodeHtmlDoc.DocumentNode.SelectNodes("td/br");
 
-                    foreach(var txt in motivos)
+                    foreach (var txt in motivos)
                     {
-                        var nodeMotivosHtmlDoc = newForm.ParserHtmlDocument(txt.InnerHtml);
-
-                        if(txt.ChildNodes.Count > 0)
-                        {
-                            texto = nodeMotivosHtmlDoc.DocumentNode.SelectSingleNode("br").InnerText;
-
-                            newRegistro.Motivo.Add(texto);
-                        }
+                        newRegistro.Motivo.Add(txt.InnerText);
                     }
                 }
                 else

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj": {}
+    "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj": {
+    "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj",
+        "projectUniqueName": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj",
         "projectName": "CrawlerANACRAB",
-        "projectPath": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj",
+        "projectPath": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAB\\CrawlerANACRAAB\\CrawlerANACRAB.csproj",
         "packagesPath": "C:\\Users\\SHU Aeronáutica 01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAAB\\CrawlerANACRAAB\\obj\\",
+        "outputPath": "C:\\Users\\SHU Aeronáutica 01\\Source\\Repos\\CrawlerANACRAB\\CrawlerANACRAAB\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -37,7 +37,7 @@
           "dependencies": {
             "HtmlAgilityPack": {
               "target": "Package",
-              "version": "[1.11.3, )"
+              "version": "[1.11.4, )"
             }
           }
         }
