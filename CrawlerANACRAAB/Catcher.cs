@@ -34,10 +34,12 @@ namespace CrawlerANACRAAB
                 if (indice.Contains("Motivo(s)"))
                 {
                     var motivos = nodeHtmlDoc.DocumentNode.SelectNodes("td/br");
-
-                    foreach (var txt in motivos)
+                    if (motivos != null)
                     {
-                        newRegistro.Motivo.Add(txt.InnerText);
+                        foreach (var txt in motivos)
+                        {
+                            newRegistro.Motivo.Add(txt.InnerText);
+                        }
                     }
                 }
                 else
