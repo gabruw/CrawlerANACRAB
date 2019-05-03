@@ -44,11 +44,12 @@
   <ItemGroup>
     <Compile Include="Catcher.cs" />
     <Compile Include="Connect.cs" />
+    <Compile Include="Model\Consulta.cs" />
     <Compile Include="FormUtils.cs" />
     <Compile Include="Navigator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro.cs" />
+    <Compile Include="Model\Registro.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -56,6 +57,9 @@
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack">
       <Version>1.11.4</Version>
+    </PackageReference>
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

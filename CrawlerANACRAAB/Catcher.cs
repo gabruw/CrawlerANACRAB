@@ -1,7 +1,11 @@
 ﻿using CrawlerANAC;
 using HtmlAgilityPack;
+using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -11,9 +15,10 @@ namespace CrawlerANACRAAB
 {
     public class Catcher
     {
+        public List<Registro> listData = new List<Registro>();
+
         public List<Registro> GetData(HtmlDocument html)
         {
-            var listData = new List<Registro>();
             FormUtils newForm = new FormUtils();
 
             var nodesData = html.DocumentNode.SelectNodes("//div[contains(@class, 'retorno-pesquisa')]/table[contains(@class, 'table')]/tbody/tr");
@@ -59,8 +64,7 @@ namespace CrawlerANACRAAB
 
         public void HasNotFoundInformation(HtmlDocument html)
         {
-            var match = "Registro não encontrado!";
-            var node = Regex.Match(html.ParsedText, match);
+            var node = Regex.Match(html.ParsedText, "Registro não encontrado!");
             if (node.Success)
             {
                 throw new Exception("Matrícula não encontrada.");

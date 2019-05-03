@@ -17,10 +17,20 @@ namespace CrawlerANACRAAB
             return htmlDoc;
         }
 
-        public Uri UrlBuilder(string chave)
+        public Uri UrlBuilder(int tipo, string chave)
         {
-            Uri Url = new Uri(String.Format("https://sistemas.anac.gov.br/aeronaves/cons_rab_novo_resposta.asp?textMarca={0}&selectHabilitacao=&selectIcao=", chave));
+            Uri Url = new Uri("https://sistemas.anac.gov.br/aeronaves");
 
+            switch (tipo)
+            {
+                case 1:
+                    Url = new Uri(String.Format("https://sistemas.anac.gov.br/aeronaves/cons_rab_novo_resposta.asp?textMarca={0}&selectHabilitacao=&selectIcao=", chave));
+                    break;
+                case 2:
+                    Url = new Uri(String.Format("https://sistemas.anac.gov.br/aeronaves/cons_rab_print.asp?nf={0}", chave));
+                    break;
+            }
+            
             return Url;
         }
     }

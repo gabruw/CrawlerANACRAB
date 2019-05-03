@@ -21,3 +21,4 @@ C:\Users\SHU Aeronáutica 01\Source\Repos\CrawlerANACRAB\CrawlerANACRAAB\obj\Deb
 E:\CrawlerANACRAB\CrawlerANACRAAB\bin\Debug\CrawlerANACRAB.exe.config
 E:\CrawlerANACRAB\CrawlerANACRAAB\obj\Debug\CrawlerANACRAB.exe
 E:\CrawlerANACRAB\CrawlerANACRAAB\obj\Debug\CrawlerANACRAB.pdb
+C:\Users\SHU Aeronáutica 01\Source\Repos\CrawlerANACRAB\CrawlerANACRAAB\bin\Debug\itextsharp.dll

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrawlerANACRAB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,6 @@ namespace CrawlerANACRAAB
     {
         public static void Main(string[] args)
         {
-            FormUtils newForm = new FormUtils();
             Navigator newNavigator = new Navigator();
 
             Console.WriteLine("Digite uma chave:");
@@ -18,10 +18,10 @@ namespace CrawlerANACRAAB
 
             Console.Clear();
 
-            var url = newForm.UrlBuilder(chave);
-            var capturas = newNavigator.NavResultado(url);
+            var capDados = newNavigator.NavPrincipal(chave);
+            var htmlPDF = newNavigator.NavPDF(chave);
 
-            foreach(var cap in capturas)
+            foreach (var cap in capDados)
             {
                 Console.WriteLine(cap.Indice);
 
