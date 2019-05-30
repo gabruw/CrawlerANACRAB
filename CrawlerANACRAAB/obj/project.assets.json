@@ -2,95 +2,59 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "HtmlAgilityPack/1.11.4": {
+      "HtmlAgilityPack/1.11.5": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
-        }
-      },
-      "iTextSharp/5.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/itextsharp.dll": {}
-        },
-        "runtime": {
-          "lib/itextsharp.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.5/win": {
-      "HtmlAgilityPack/1.11.4": {
+      "HtmlAgilityPack/1.11.5": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
-        }
-      },
-      "iTextSharp/5.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/itextsharp.dll": {}
-        },
-        "runtime": {
-          "lib/itextsharp.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.5/win-x64": {
-      "HtmlAgilityPack/1.11.4": {
+      "HtmlAgilityPack/1.11.5": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
-        }
-      },
-      "iTextSharp/5.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/itextsharp.dll": {}
-        },
-        "runtime": {
-          "lib/itextsharp.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.5/win-x86": {
-      "HtmlAgilityPack/1.11.4": {
+      "HtmlAgilityPack/1.11.5": {
         "type": "package",
         "compile": {
           "lib/Net45/HtmlAgilityPack.dll": {}
         },
         "runtime": {
           "lib/Net45/HtmlAgilityPack.dll": {}
-        }
-      },
-      "iTextSharp/5.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/itextsharp.dll": {}
-        },
-        "runtime": {
-          "lib/itextsharp.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "HtmlAgilityPack/1.11.4": {
-      "sha512": "Gf+nBeYcCHVrmhhST5b2/w/0oMPsGE3EOlJgL5t9v3YYE3d0EuN0svyv8QjaUxFrHsUpbCjzlhjaZy+RnyUy7g==",
+    "HtmlAgilityPack/1.11.5": {
+      "sha512": "p8LnMc7QRC0jMLTPoH0WEyTlS6uH+g58El8hOPr84ccTb0S+bls0pYa+7ziyYHvV28kmv6Ipd7S+CWqjNJyj6g==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.4",
+      "path": "htmlagilitypack/1.11.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.4.nupkg.sha512",
+        "htmlagilitypack.1.11.5.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net20/HtmlAgilityPack.dll",
         "lib/Net20/HtmlAgilityPack.pdb",
@@ -133,27 +97,11 @@
         "lib/uap10.0/HtmlAgilityPack.pdb",
         "lib/uap10.0/HtmlAgilityPack.pri"
       ]
-    },
-    "iTextSharp/5.5.13": {
-      "sha512": "MigtmZrqjrJ4QERhgNZc+zhl+XSNV5y3JoH5nNxzdNjPvZJgzYN2qLRQhqtWsF9F/1H28SnOkoS6uIlSduSrXQ==",
-      "type": "package",
-      "path": "itextsharp/5.5.13",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AGPL.txt",
-        "itextsharp.5.5.13.nupkg.sha512",
-        "itextsharp.nuspec",
-        "lib/iTextSharp.xml",
-        "lib/itextsharp.dll",
-        "notice.txt"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5": [
-      "HtmlAgilityPack >= 1.11.4",
-      "iTextSharp >= 5.5.13"
+      "HtmlAgilityPack >= 1.11.5"
     ]
   },
   "packageFolders": {
@@ -192,11 +140,7 @@
         "dependencies": {
           "HtmlAgilityPack": {
             "target": "Package",
-            "version": "[1.11.4, )"
-          },
-          "iTextSharp": {
-            "target": "Package",
-            "version": "[5.5.13, )"
+            "version": "[1.11.5, )"
           }
         }
       }

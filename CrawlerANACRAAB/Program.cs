@@ -1,9 +1,5 @@
 ﻿using CrawlerANACRAB;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CrawlerANACRAAB
 {
@@ -19,9 +15,11 @@ namespace CrawlerANACRAAB
             Console.Clear();
 
             var capDados = newNavigator.NavPrincipal(chave);
-            var htmlPDF = newNavigator.NavPDF(chave);
+            newNavigator.NavPDF(chave);
 
-            foreach (var cap in capDados)
+            Consulta newConsulta = newNavigator.newConsulta;
+
+            foreach (var cap in newConsulta.ListRegistro)
             {
                 Console.WriteLine(cap.Indice);
 
@@ -37,6 +35,8 @@ namespace CrawlerANACRAAB
                     Console.WriteLine(cap.Texto + "\n");
                 }
             }
+
+            Console.WriteLine(newConsulta.HtmlPDF + "\n");
 
             Console.ReadKey();
         }

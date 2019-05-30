@@ -1,15 +1,8 @@
 ﻿using CrawlerANAC;
 using HtmlAgilityPack;
-using iTextSharp.text;
-using iTextSharp.text.html.simpleparser;
-using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace CrawlerANACRAAB
 {
@@ -49,7 +42,15 @@ namespace CrawlerANACRAAB
                 }
                 else
                 {
-                    texto = nodeHtmlDoc.DocumentNode.SelectSingleNode("td/text()").OuterHtml;
+                    try
+                    {
+                        texto = nodeHtmlDoc.DocumentNode.SelectSingleNode("td/text()").OuterHtml;
+
+                    }
+                    catch
+                    {
+                        texto = string.Empty;
+                    }
 
                     newRegistro.Texto = texto.Trim();
                 }

@@ -1,17 +1,12 @@
 ﻿using CrawlerANAC;
 using CrawlerANACRAB;
-using HtmlAgilityPack;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CrawlerANACRAAB
 {
     public class Navigator
     {
-        Consulta newConsulta = new Consulta();
+        public Consulta newConsulta = new Consulta();
 
         public List<Registro> NavPrincipal(string chave)
         {
@@ -32,20 +27,14 @@ namespace CrawlerANACRAAB
             return capturas;
         }
 
-        public string NavPDF(string chave)
+        public void NavPDF(string chave)
         {
             Connect newConnect = new Connect();
             FormUtils newForm = new FormUtils();
 
-            var url = newForm.UrlBuilder(2, chave);
+            var url = newForm.UrlBuilder(2, chave).ToString();
 
-            var html = newConnect.RequestGET(url);
-
-            var htmlPDF = html.ParsedText;
-
-            newConsulta.HtmlPDF = htmlPDF;
-
-            return htmlPDF;
+            newConsulta.HtmlPDF = url;
         }
     }
 }
