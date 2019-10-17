@@ -3331,11 +3331,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB.csproj",
       "projectName": "CrawlerConsultaRAB",
-      "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB.csproj",
+      "projectPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB.csproj",
       "packagesPath": "C:\\Users\\gabriel.frança\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\CrawlerConsultaRAB\\obj\\",
+      "outputPath": "C:\\Users\\gabriel.frança\\Documents\\GitHub\\CrawlerANACRAB\\CrawlerConsultaRAB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -5,7 +5,51 @@ namespace CrawlerConsultaRAB
 {
     public class Index
     {
+        /*
+         Chaves para teste:
+         PRATA
+         PTHGP
+         PTFTP
+         PTCPD
+         PTKGB
+         PTRTC
+         PTTCC
+         PTYEL
+         PTJFP
+         PTLSD
+         PTFFG
+        */
+
         public static void Main(string[] args)
+        {
+            Index index = new Index();
+            index.Menu();
+        }
+
+        private void Menu()
+        {
+            ConsultaRAB();
+
+            Console.WriteLine("<> Deseja efetuar uma nova consulta? [S/N]");
+            string option = Console.ReadLine().ToUpper();
+
+            Console.Clear();
+
+            switch (option)
+            {
+                case "S":
+                case "SIM":
+                    Menu();
+                    break;
+                case "N":
+                case "NAO":
+                default:
+                    Console.WriteLine("Obrigado por utilizar o programa.");
+                    break;
+            }
+        }
+
+        private void ConsultaRAB()
         {
             Navigator Navigator = new Navigator();
 
@@ -24,6 +68,7 @@ namespace CrawlerConsultaRAB
             Consulta Consulta = Navigator._consulta;
 
             // Mostra as capturas na tela
+            Console.WriteLine("----------------------------------------------------------------------------------------");
             foreach (Registro captura in Consulta.ListRegistro)
             {
                 Console.WriteLine(captura.Indice);
@@ -41,9 +86,9 @@ namespace CrawlerConsultaRAB
                 }
             }
 
+            Console.WriteLine("\nLink do PDF:");
             Console.WriteLine(Consulta.HtmlPDF + "\n");
-
-            Console.ReadKey();
+            Console.WriteLine("----------------------------------------------------------------------------------------");
         }
     }
 }
