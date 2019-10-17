@@ -1,4 +1,0 @@
-C:\Users\snyp_\source\repos\CrawlerConsultaRAB\CrawlerConsultaRAB\bin\Debug\netcoreapp3.0\CrawlerConsultaRAB.exe
-C:\Users\snyp_\source\repos\CrawlerConsultaRAB\CrawlerConsultaRAB\obj\Debug\netcoreapp3.0\CrawlerConsultaRAB.csprojAssemblyReference.cache
-C:\Users\snyp_\source\repos\CrawlerConsultaRAB\CrawlerConsultaRAB\obj\Debug\netcoreapp3.0\CrawlerConsultaRAB.AssemblyInfoInputs.cache
-C:\Users\snyp_\source\repos\CrawlerConsultaRAB\CrawlerConsultaRAB\obj\Debug\netcoreapp3.0\CrawlerConsultaRAB.AssemblyInfo.cs
