@@ -37,7 +37,7 @@ namespace CrawlerConsultaRAB
                     url = new Uri(String.Format("https://sistemas.anac.gov.br/aeronaves/cons_rab_print.asp?nf={0}", chave));
                     break;
                 default:
-                    throw new Exception("Tipo de consulta inválido!");
+                    throw new Exception("Tipo de consulta inválida!");
             }
 
             return url;
